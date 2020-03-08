@@ -19,13 +19,17 @@ body{
     padding: 48px 82px;
 }
 #quote-container button{
-    margin: 40px 0 ;
+    margin: 50px 0 ;
 }
 /*brand style*/
 #brand a{
     padding: 0 52px;
     border-right: 1px solid #929aab;
 }
+#btn button{
+    padding-left: 0 10px;
+}
+
 
 /*vertical heading left*/
 .vertical-menu {
@@ -134,7 +138,83 @@ text-decoration: none;
     color: #414a4c;
 }
 
+/*Main menu*/
+#main-menu{
+ margin-bottom: 20px;
+border-bottom: 2px solid #f4f4f4;
+}
+#main-menu ul li:hover{
+    border-bottom: 2px solid black;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+#main-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   
+}
+#main-menu li {
+    float: left;
+}
+#main-menu li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#main-menu li a:hover {
+    background-color: #f4f4f4;
+}
+#menu-content-left{
+    padding: 0;
+    margin: 0;
+}
+#menu-content-left img{
+    padding: 5px;
+    border: 2px solid #f4f4f4;
+    margin-bottom: 100px;
+}
+#menu-content-left i{
+    color: #677075;
+}
 
+#menu-content-left h5{
+    color: #677075;
+}
+#menu-content-right h5{
+    display: inline-block;
+    font-size: 18px;
+    color: #2D6FF7;
+}
+#menu-content-right p{
+    font-size: 16px;
+    display: inline-block;
+}
+#menu-content-right a{
+    font-size: 14px;
+    text-decoration: none;
+}
+#menu-content-right h4{
+    font-size: 18px;
+    font-weight: 500;
+}
+#menu-content-right span{
+    font-size: 14px;
+    text-align: justify;
+}
+#menu-content-tag a{
+    
+    padding: 10px 8px;
+    border: 1px solid #f4f4f4;
+}
+#menu-content-answer a{
+    margin-right: 26px;
+    border: 1px solid #f4f4f4;
+    padding: 10px 8px;
+}
 /*Memebers*/
 
 #memebers{

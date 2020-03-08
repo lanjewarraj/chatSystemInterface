@@ -12,7 +12,7 @@ body{
 
 
 #quote-container{
-   background: url(image/book2.jpg) no-repeat;
+   background: url(image/book2.jpg) no-repeat fixed;
     background-size: cover;
    color: #fff;
     padding: 48px 82px;
@@ -28,7 +28,7 @@ body{
 
 /*vertical heading left*/
 .vertical-menu {
-    width: 200px;
+    width: 100%;
     background-color: #eee;
 }
 
@@ -63,7 +63,12 @@ body{
     background-color: #fff;
     border-bottom: 1px solid red;
 }
-
+#q-a{
+    background-color: #F9F9F9;
+}
+.q-a-content{
+    background-color: #fff;
+}
 
 /* Q And A Tabs*/
 
@@ -78,25 +83,111 @@ body{
     font-family: "Raleway" sans-serif;
     color: #212226;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 200;
     padding: 0;
     text-decoration: none;
 }
 #ans-tabs ul li.r-tabs-state-active a{
-    background-color: #034f84;
-    color: #fff;
-    font-weight: 700;
-    border:1px solid #034f84;
+    background-color: #f4f4f4;
+    color: blue;
+    font-weight: 400;
+    border-top:    1px solid  #E1E3E3;
+    border-right:  1px solid #E1E3E3;
+    border-left:   1px solid #E1E3E3;
     padding: 4px;
     -webkit-transition: background-color 300ms linear;
     transition: background-color 300ms linear;
 
 }
 
-#sjsa-tab-bg ul li{
+#ans-tab-bg ul li{
     list-style: none;
     font-size: 18px;
 
 }
+/*end responsive tab section*/
+#ans-tab-bg{
+    background-color: #f4f4f4;
+    padding: 8px 12px;
+}
+#ans-tab-bg img{
+    display: inline-block;
+}
+#ans-tab-bg h6{
+    display: inline-block;
+}
+#ans-tab-bg span{
+    color: #414a4c;
+    font-size: 14px;
+}
+#ans-tab-bg a{
+text-decoration: none;
+    font-size: 15px;
+    text-align: justify;
+}
+#ans-tab-bg p{
+    color: black;
+    font-size: 14px;
+}
+#ans-tab-bg span{
+    color: #414a4c;
+}
 
+
+/*Memebers*/
+
+#memebers{
+    margin: 5px 0;
+    background-color: #f4f4f4;
+}
+#memebers h3{
+    font-size: 18px;
+    padding: 10px 0;
+}
+.member h6{
+ color: blue;
+ text-decoration: none;
+}
+.member p{ 
+    color: #414a4c;
+}
+#member-2 span{
+    padding: 5px;
+    background-color:green; 
+    color: #fff;
+}
+#member-1 span{
+    padding: 5px;
+    background-color:#D9A34A; 
+    color: #fff; 
+}
+#member-3 span{
+    padding: 5px;
+    background-color:#2D6FF7; 
+    color: #fff;
+}
+
+
+/*tags*/
+#tags {
+    background-color: #f4f4f4;
+    margin-top: 10px;
+}
+#tags h3{
+    padding: 10px 0;
+    font-size: 18px;
+}
+#tags a{
+    padding: 6px 2px;
+    text-decoration: none;
+    color: black;
+}
+#tags a:hover{
+    color: #fff;
+    background: blue;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    border-radius: 4px;
+    
+}
 

@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/*generic css*/
+.content-box-md{
+    padding: 50px 0;
+}
+.content-box-sd{
+    padding: 25px 0;
+}
+
+
+#quote-container{
+   background: url(image/book2.jpg) no-repeat;
+    background-size: cover;
+   color: #fff;
+    padding: 48px 82px;
+}
+#quote-container button{
+    margin: 40px 0 ;
+}
+/*brand style*/
+#brand a{
+    padding: 0 52px;
+    border-right: 1px solid #929aab;
+}
+
+/*vertical heading left*/
+.vertical-menu {
+    width: 200px;
+    background-color: #eee;
+}
+
+.vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+.vertical-menu ul{
+    display: inline-block
+}
+.vertical-menu ul li{
+    
+    color: black;
+    list-style: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.vertical-menu a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+/*right vertical menu*/
+#ask-question{
+    background-color: #fff;
+    border-bottom: 1px solid red;
+}

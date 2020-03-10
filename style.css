@@ -64,15 +64,18 @@ body{
 
 
 /*right vertical menu*/
-#ask-question{
-    background-color: #fff;
-    border-bottom: 1px solid red;
+#ask-question-btn{
+    background-color: #f4f4f4;
+    width: 100%;
+    padding: 18px 8px;
+    
 }
 #q-a{
-    background-color: #F9F9F9;
+    background-color: #F4F4F4;
+    padding: 10px 8px;
 }
 .q-a-content{
-    background-color: #fff;
+    background-color: #f4f4f4;
 }
 
 /* Q And A Tabs*/
@@ -139,6 +142,41 @@ text-decoration: none;
 }
 
 /*Main menu*/
+#main-content-container ul{
+    list-style: none;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#main-content-container ul li{
+    margin-right: 8px;
+}
+#main-content-container ul li a{
+    text-decoration: none;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 6px 4px;
+    font-weight: 500;
+}
+#main-content-container li a:hover {
+    color: #fff;
+    background-color: #2D6FF7;
+    border-radius: 5px;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+
+}
+
+
+
+
+
+
+
+
+/*
 #main-menu{
  margin-bottom: 5px;
 }
@@ -164,7 +202,7 @@ text-decoration: none;
 }
 #main-menu li a:hover {
     background-color: #f4f4f4;
-}
+}*/
 #menu-content-left{
     padding: 0;
     margin: 0;

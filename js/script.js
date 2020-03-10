@@ -11,3 +11,11 @@ $(function () {
         animation: 'slide',
     });
 });
+
+/*counter up effect*/
+$(function () {
+    $(".counter").counterUp({
+        delay: 15,
+        time: 4500
+    });
+});

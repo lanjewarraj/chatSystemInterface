@@ -13,10 +13,10 @@ body{
 
 
 #quote-container{
-   background: url(image/book2.jpg) no-repeat fixed;
-    background-size: cover;
+   background: url(image/ans2.jpg) no-repeat fixed;
+   background-size: cover;
    color: #fff;
-    padding: 48px 82px;
+   padding: 48px 82px;
 }
 #quote-container button{
     margin: 50px 0 ;
@@ -307,6 +307,32 @@ text-decoration: none;
     margin-top: 18px;
    
 }
+
+/*ask question*/
+#ask-ques{
+    border: 1px solid #2D6FF7;
+    margin-top: 20px;
+    padding: 10px;
+}
+#ask-ques-container i{
+    font-size: 22px;
+    display: inline-block;
+}
+#ask-ques-container h2{
+    font-size: 18px;
+    display: inline-block;
+    margin-left: 8px;
+}
+#ask-ques-container p{
+    font-size: 16px;
+}
+
+#ask-ques-container button{
+    margin-top: 10px;
+}
+
+
+
 /*Memebers*/
 
 #memebers{

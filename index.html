@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>chat system</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <!--responsive tabs css-->
     <link rel="stylesheet" type="text/css" href="responsive-tabs/responsive-tabs.css">
     <link rel="stylesheet" href="style.css">
-    
-    
+
+
 </head>
+
 <body>
-   <!--navbar-->
+    <!--navbar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-       <div id="brand">
-        <a class="navbar-brand" href="#">Logo</a>
+        <div id="brand">
+            <a class="navbar-brand" href="#">Logo</a>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
@@ -35,234 +37,395 @@
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Type Search Word" aria-label="Search"><i class="fa fa-search" style="cursor: pointer"></i>&nbsp;&nbsp;&nbsp;
-                
+
             </form>
             <div id="btn">
-            <button class="btn btn-primary" type="submit">SignIn</button>
-            <button class="btn btn-secondary" type="submit">SignUp</button>
+                <button class="btn btn-primary" type="submit">SignIn</button>
+                <button class="btn btn-secondary" type="submit">SignUp</button>
             </div>
         </div>
-    </nav>   
+    </nav>
     <!--quote-->
     <section id="quote-section">
         <div class="container-fluid">
             <div class="content-box-md">
-               <div id="quote-container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h4>Share and grow the world's knowledge!</h4>
-                        <p>We want to connect the people who have knowledge to the people who need it, to bring together people with different perspectives so they can understand each other better, and to empower everyone to share their knowledge.</p>    
+                <div id="quote-container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Share and grow the world's knowledge!</h4>
+                            <p>We want to connect the people who have knowledge to the people who need it, to bring together people with different perspectives so they can understand each other better, and to empower everyone to share their knowledge.</p>
+                        </div>
+                        <div class="col-md-3"></div>
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-primary">Create a New Account</button>
+                        </div>
                     </div>
-                    <div class="col-md-3"></div>
-                    <div class="col-md-3">
-                        <button type="button" class="btn btn-primary">Create a New Account</button>
-                    </div>
-                </div>
                 </div>
             </div>
         </div>
-        
+
     </section>
-    
+
     <section id="main-content">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-3">
                     <div class="vertical-menu" id="left-vertical-menu">
                         <a href="#">Home</a>
-                        <a href="#"><i class="fa fa-folder"></i> Communities</a>
+                        <a href="#"><i class="fa fa-users"></i> Communities</a>
                         <a href="#"><i class="fa fa-question"></i> Questions</a>
                         <ul>
-                            <a href=""><li>New Question</li></a>
-                            <a href=""><li>Trending Question</li></a>
-                            <a href=""><li>Must Read Question</li></a>
-                            <a href=""><li>Hot Question</li></a>
+                            <a href="">
+                                <li>New Question</li>
+                            </a>
+                            <a href="">
+                                <li>Trending Question</li>
+                            </a>
+                            <a href="">
+                                <li>Must Read Question</li>
+                            </a>
+                            <a href="">
+                                <li>Hot Question</li>
+                            </a>
                         </ul>
-                        <a href="#"><i class="fa fa-question"></i> Polls</a>
-                        <a href="#"><i class="fa fa-question"></i> Tags</a>
-                        <a href="#"><i class="fa fa-question"></i> Users</a>
-                        <a href="#"><i class="fa fa-question"></i> Help</a>
+                        <a href="#"><i class="fa fa-bullhorn"></i> Polls</a>
+                        <a href="#"><i class="fa fa-tag"></i> Tags</a>
+                        <a href="#"><i class="fa fa-user"></i> Users</a>
+                        <a href="#"><i class="fa fa-info"></i> Help</a>
                     </div>
                 </div>
-                
-                
+
+
                 <div class="col-md-6">
                     <div class="container">
-                       <!--1-->
-                        <div class="row">
-                            <div id="main-menu" class="text-center">
+                        <div id="main-content-container">
                             <ul>
-                                <li><a class="active" href="#">Recent Questions</a></li>
-                                <li><a href="#">Most Answered</a></li>
-                                <li><a href="#">Answers</a></li>
-                                <li><a href="#">Most Visited</a></li>
+                                <li><a href="#recent-question">Recent Questions</a></li>
+                                <li><a href="#most-ans">Most Answered</a></li>
+                                <li><a href="#ans">Answers</a></li>
+                                <li><a href="#most-visited">Most Visited</a></li>
+                                <li><a href="#ask-ques">Ask Question</a></li>
                             </ul>
+                            <!-- recent-question Tab 1-->
+                            <div id="recent-question">
+                               <!--Q1-->
+                                <div class="row">
+                                    <div id="menu-content-left">
+                                        <div class="col-md-2">
+                                            <img src="image/book1.jpg" width="40px" height="40px" class="rounded-circle">
+                                            <a href=""><i class="fa fa-arrow-up"></i></a>
+                                            <h5>23</h5>
+                                            <a href=""><i class="fa fa-arrow-down"></i></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-10">
+                                        <div id="menu-content-right">
+                                            <h5>Martin Hope</h5>
+                                            <p>Asked: <a href=""> April 19 2018</a></p>
+                                            <p> In: <a href=""> Programming</a></p>
+                                            <h4>What is a Syntax of foreach loop in php ?</h4>
+                                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione magnam sunt accusantium itaque cupiditate velit, nam repellendus aliquid nihil dignissimos, voluptas quaerat mollitia porro ducimus et ut saepe cumque voluptatibus?</span>
+                                            <br />
+                                            <br />
+                                            <div id="menu-content-tag">
+                                                <a href=""> Programming</a>
+                                                <a href=""> PHP</a>
+                                            </div>
+                                            <br />
+                                            <br />
+                                            <div id="menu-content-answer">
+                                                <a href=""><i class="fa fa-comment"></i>&nbsp; 3 Answers</a>
+                                                <a href=""><i class="fa fa-eye"></i>&nbsp;
+                                                    1k views</a>
+                                                <button class="btn btn-primary">Answer</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Q2-->
+                                <div class="row">
+                                    <div id="menu-content-left">
+                                        <div class="col-md-2">
+                                            <img src="image/book1.jpg" width="40px" height="40px" class="rounded-circle">
+                                            <a href=""><i class="fa fa-arrow-up"></i></a>
+                                            <h5>23</h5>
+                                            <a href=""><i class="fa fa-arrow-down"></i></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-10">
+                                        <div id="menu-content-right">
+                                            <h5>Martin Hope</h5>
+                                            <p>Asked: <a href=""> April 19 2018</a></p>
+                                            <p> In: <a href=""> Programming</a></p>
+                                            <h4>What is a Syntax of foreach loop in php ?</h4>
+                                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione magnam sunt accusantium itaque cupiditate velit, nam repellendus aliquid nihil dignissimos, voluptas quaerat mollitia porro ducimus et ut saepe cumque voluptatibus?</span>
+                                            <br />
+                                            <br />
+                                            <div id="menu-content-tag">
+                                                <a href=""> Programming</a>
+                                                <a href=""> PHP</a>
+                                            </div>
+                                            <br />
+                                            <br />
+                                            <div id="menu-content-answer">
+                                                <a href=""><i class="fa fa-comment"></i>&nbsp; 3 Answers</a>
+                                                <a href=""><i class="fa fa-eye"></i>&nbsp;
+                                                    1k views</a>
+                                                <button class="btn btn-primary">Answer</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <!--Q3-->
+                                <div class="row">
+                                    <div id="menu-content-left">
+                                        <div class="col-md-2">
+                                            <img src="image/book1.jpg" width="40px" height="40px" class="rounded-circle">
+                                            <a href=""><i class="fa fa-arrow-up"></i></a>
+                                            <h5>23</h5>
+                                            <a href=""><i class="fa fa-arrow-down"></i></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-10">
+                                        <div id="menu-content-right">
+                                            <h5>Martin Hope</h5>
+                                            <p>Asked: <a href=""> April 19 2018</a></p>
+                                            <p> In: <a href=""> Programming</a></p>
+                                            <h4>What is a Syntax of foreach loop in php ?</h4>
+                                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione magnam sunt accusantium itaque cupiditate velit, nam repellendus aliquid nihil dignissimos, voluptas quaerat mollitia porro ducimus et ut saepe cumque voluptatibus?</span>
+                                            <br />
+                                            <br />
+                                            <div id="menu-content-tag">
+                                                <a href=""> Programming</a>
+                                                <a href=""> PHP</a>
+                                            </div>
+                                            <br />
+                                            <br />
+                                            <div id="menu-content-answer">
+                                                <a href=""><i class="fa fa-comment"></i>&nbsp; 3 Answers</a>
+                                                <a href=""><i class="fa fa-eye"></i>&nbsp;
+                                                    1k views</a>
+                                                <button class="btn btn-primary">Answer</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr> 
+                                
                             </div>
-                              
-                        </div>
-                        <div class="row">
-                           <div id="menu-content-left">
-                               <div class="col-md-2">
-                                   <img src="image/book1.jpg" width="40px" height="40px" class="rounded-circle">
-                                   <a href=""><i class="fa fa-arrow-up"></i></a>
-                                   <h5>23</h5>
-                                   <a href=""><i class="fa fa-arrow-down"></i></a>
-                               </div>   
-                           </div>
                             
-                            <div class="col-md-10">
-                                <div id="menu-content-right">
-                                    <h5>Martin Hope</h5>
-                                    <p>Asked: <a href=""> April 19 2018</a></p>
-                                    <p> In: <a href="" >  Programming</a></p>
-                                    <h4>What is a Syntax of foreach loop in php ?</h4>
-                                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione magnam sunt accusantium itaque cupiditate velit, nam repellendus aliquid nihil dignissimos, voluptas quaerat mollitia porro ducimus et ut saepe cumque voluptatibus?</span>
-                                    <br/>
-                                    <br/>
-                                    <div id="menu-content-tag">
-                                        <a href=""> Programming</a>
-                                        <a href=""> PHP</a>
+                            <!-- most-answer Tab 2-->
+                            <div id="most-answer">
+                                <div class="row">
+                                    <div id="menu-content-left">
+                                        <div class="col-md-2">
+                                            <img src="image/book1.jpg" width="40px" height="40px" class="rounded-circle">
+                                            <a href=""><i class="fa fa-arrow-up"></i></a>
+                                            <h5>23</h5>
+                                            <a href=""><i class="fa fa-arrow-down"></i></a>
+                                        </div>
                                     </div>
-                                    <br/>
-                                    <br/>
-                                    <div id="menu-content-answer">
-                                        <a href=""><i class="fa fa-comment"></i>&nbsp; 3 Answers</a>
-                                        <a href=""><i class="fa fa-eye"></i>&nbsp;  
-                                        1k views</a>
-                                        <button class="btn btn-primary">Answer</button>
+
+                                    <div class="col-md-10">
+                                        <div id="menu-content-right">
+                                            <h5>Martin Hope</h5>
+                                            <p>Asked: <a href=""> April 19 2018</a></p>
+                                            <p> In: <a href=""> Programming</a></p>
+                                            <h4>What is a Syntax of foreach loop in php ?</h4>
+                                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione magnam sunt accusantium itaque cupiditate velit, nam repellendus aliquid nihil dignissimos, voluptas quaerat mollitia porro ducimus et ut saepe cumque voluptatibus?</span>
+                                            <br />
+                                            <br />
+                                            <div id="menu-content-tag">
+                                                <a href=""> Programming</a>
+                                                <a href=""> PHP</a>
+                                            </div>
+                                            <br />
+                                            <br />
+                                            <div id="menu-content-answer">
+                                                <a href=""><i class="fa fa-comment"></i>&nbsp; 3 Answers</a>
+                                                <a href=""><i class="fa fa-eye"></i>&nbsp;
+                                                    1k views</a>
+                                                <button class="btn btn-primary">Answer</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <hr>
-                        <!--2-->
-                        <div class="row">
-                            <div id="menu-content-left">
-                                <div class="col-md-2">
-                                    <img src="image/book1.jpg" width="40px" height="40px" class="rounded-circle">
-                                    <a href=""><i class="fa fa-arrow-up"></i></a>
-                                    <h5>23</h5>
-                                    <a href=""><i class="fa fa-arrow-down"></i></a>
-                                </div>   
                             </div>
 
-                            <div class="col-md-10">
-                                <div id="menu-content-right">
-                                    <h5>Martin Hope</h5>
-                                    <p>Asked: <a href=""> April 19 2018</a></p>
-                                    <p> In: <a href="" >  Programming</a></p>
-                                    <h4>What is a Syntax of foreach loop in php ?</h4>
-                                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione magnam sunt accusantium itaque cupiditate velit, nam repellendus aliquid nihil dignissimos, voluptas quaerat mollitia porro ducimus et ut saepe cumque voluptatibus?</span>
-                                    <br/>
-                                    <br/>
-                                    <div id="menu-content-tag">
-                                        <a href=""> Programming</a>
-                                        <a href=""> PHP</a>
+                            <!-- ans Tab 3-->
+                            <div id="ans">
+                                <div class="row">
+                                    <div id="menu-content-left">
+                                        <div class="col-md-2">
+                                            <img src="image/book1.jpg" width="40px" height="40px" class="rounded-circle">
+                                            <a href=""><i class="fa fa-arrow-up"></i></a>
+                                            <h5>23</h5>
+                                            <a href=""><i class="fa fa-arrow-down"></i></a>
+                                        </div>
                                     </div>
-                                    <br/>
-                                    <br/>
-                                    <div id="menu-content-answer">
-                                        <a href=""><i class="fa fa-comment"></i>&nbsp; 3 Answers</a>
-                                        <a href=""><i class="fa fa-eye"></i>&nbsp;  
-                                            1k views</a>
-                                        <button class="btn btn-primary">Answer</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <hr>
-                        <!--3-->
-                        <div class="row">
-                            <div id="menu-content-left">
-                                <div class="col-md-2">
-                                    <img src="image/book1.jpg" width="40px" height="40px" class="rounded-circle">
-                                    <a href=""><i class="fa fa-arrow-up"></i></a>
-                                    <h5>23</h5>
-                                    <a href=""><i class="fa fa-arrow-down"></i></a>
-                                </div>   
-                            </div>
 
-                            <div class="col-md-10">
-                                <div id="menu-content-right">
-                                    <h5>Martin Hope</h5>
-                                    <p>Asked: <a href=""> April 19 2018</a></p>
-                                    <p> In: <a href="" >  Programming</a></p>
-                                    <h4>What is a Syntax of foreach loop in php ?</h4>
-                                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione magnam sunt accusantium itaque cupiditate velit, nam repellendus aliquid nihil dignissimos, voluptas quaerat mollitia porro ducimus et ut saepe cumque voluptatibus?</span>
-                                    <br/>
-                                    <br/>
-                                    <div id="menu-content-tag">
-                                        <a href=""> Programming</a>
-                                        <a href=""> PHP</a>
+                                    <div class="col-md-10">
+                                        <div id="menu-content-right">
+                                            <h5>Martin Hope</h5>
+                                            <p>Asked: <a href=""> April 19 2018</a></p>
+                                            <p> In: <a href=""> Programming</a></p>
+                                            <h4>What is a Syntax of foreach loop in php ?</h4>
+                                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione magnam sunt accusantium itaque cupiditate velit, nam repellendus aliquid nihil dignissimos, voluptas quaerat mollitia porro ducimus et ut saepe cumque voluptatibus?</span>
+                                            <br />
+                                            <br />
+                                            <div id="menu-content-tag">
+                                                <a href=""> Programming</a>
+                                                <a href=""> PHP</a>
+                                            </div>
+                                            <br />
+                                            <br />
+                                            <div id="menu-content-answer">
+                                                <a href=""><i class="fa fa-comment"></i>&nbsp; 3 Answers</a>
+                                                <a href=""><i class="fa fa-eye"></i>&nbsp;
+                                                    1k views</a>
+                                                <button class="btn btn-primary">Answer</button>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <br/>
-                                    <br/>
-                                    <div id="menu-content-answer">
-                                        <a href=""><i class="fa fa-comment"></i>&nbsp; 3 Answers</a>
-                                        <a href=""><i class="fa fa-eye"></i>&nbsp;  
-                                            1k views</a>
-                                        <button class="btn btn-primary">Answer</button>
+                                </div>
+                            </div>
+                            
+                            <!-- most-visited Tab 4-->
+                            <div id="most-visited">
+                                <div class="row">
+                                    <div id="menu-content-left">
+                                        <div class="col-md-2">
+                                            <img src="image/book1.jpg" width="40px" height="40px" class="rounded-circle">
+                                            <a href=""><i class="fa fa-arrow-up"></i></a>
+                                            <h5>23</h5>
+                                            <a href=""><i class="fa fa-arrow-down"></i></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-10">
+                                        <div id="menu-content-right">
+                                            <h5>Martin Hope</h5>
+                                            <p>Asked: <a href=""> April 19 2018</a></p>
+                                            <p> In: <a href=""> Programming</a></p>
+                                            <h4>What is a Syntax of foreach loop in php ?</h4>
+                                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione magnam sunt accusantium itaque cupiditate velit, nam repellendus aliquid nihil dignissimos, voluptas quaerat mollitia porro ducimus et ut saepe cumque voluptatibus?</span>
+                                            <br />
+                                            <br />
+                                            <div id="menu-content-tag">
+                                                <a href=""> Programming</a>
+                                                <a href=""> PHP</a>
+                                            </div>
+                                            <br />
+                                            <br />
+                                            <div id="menu-content-answer">
+                                                <a href=""><i class="fa fa-comment"></i>&nbsp; 3 Answers</a>
+                                                <a href=""><i class="fa fa-eye"></i>&nbsp;
+                                                    1k views</a>
+                                                <button class="btn btn-primary">Answer</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!--ask-ques Tab 5-->
+                            <div id="ask-ques">
+                                <div class="row">
+                                    <div id="menu-content-left">
+                                        <div class="col-md-2">
+                                            <img src="image/book1.jpg" width="40px" height="40px" class="rounded-circle">
+                                            <a href=""><i class="fa fa-arrow-up"></i></a>
+                                            <h5>23</h5>
+                                            <a href=""><i class="fa fa-arrow-down"></i></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-10">
+                                        <div id="menu-content-right">
+                                            <h5>Martin Hope</h5>
+                                            <p>Asked: <a href=""> April 19 2018</a></p>
+                                            <p> In: <a href=""> Programming</a></p>
+                                            <h4>What is a Syntax of foreach loop in php ?</h4>
+                                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione magnam sunt accusantium itaque cupiditate velit, nam repellendus aliquid nihil dignissimos, voluptas quaerat mollitia porro ducimus et ut saepe cumque voluptatibus?</span>
+                                            <br />
+                                            <br />
+                                            <div id="menu-content-tag">
+                                                <a href=""> Programming</a>
+                                                <a href=""> PHP</a>
+                                            </div>
+                                            <br />
+                                            <br />
+                                            <div id="menu-content-answer">
+                                                <a href=""><i class="fa fa-comment"></i>&nbsp; 3 Answers</a>
+                                                <a href=""><i class="fa fa-eye"></i>&nbsp;
+                                                    1k views</a>
+                                                <button class="btn btn-primary">Answer</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
-                    </div>    
+                    </div>
                 </div>
-                
+
                 <!--right vertical heading-->
                 <div class="col-md-3">
                     <div id="right-vertical-menu">
                         <div class="container">
                             <div id="ask-question">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <button type="button" class="btn btn-primary">Ask A Questions</button>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button type="button" class="btn btn-primary">Ask A Questions</button>
+                                    </div>
                                 </div>
                             </div>
-                            </div>
                         </div>
-                        
-                            <!--Q and A -->
-                            <div class="container">
-                                <div class="content-box-sd">
+
+                        <!--Q and A -->
+                        <div class="container">
+                            <div class="content-box-sd">
                                 <div id="q-a">
                                     <div class="row">
                                         <div class="col-md-6">
-                                           <div class="q-a-content">
-                                            <p>Questions</p>
-                                            <h4>30</h4>
-                                            </div>
-                                            
-                                        </div>
-                                        <div class="col-md-6">
                                             <div class="q-a-content">
-                                            <p>Answer</p>
-                                            <h4>49</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="q-a-content">
-                                            <p>Best Answer</p>
-                                            <h4>102</h4>
+                                                <p>Questions</p>
+                                                <h4>30</h4>
                                             </div>
 
                                         </div>
                                         <div class="col-md-6">
                                             <div class="q-a-content">
-                                            <p>Users</p>
-                                            <h4>190</h4>
+                                                <p>Answer</p>
+                                                <h4>49</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="q-a-content">
+                                                <p>Best Answer</p>
+                                                <h4>102</h4>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="q-a-content">
+                                                <p>Users</p>
+                                                <h4>190</h4>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            </div>
                         </div>
-                              
-                    <!--popular , answer tab-->         
+                    </div>
+
+                    <!--popular , answer tab-->
                     <div id="ans-tabs">
                         <ul class="text-center">
                             <li><a href="#anstab-1">Popular Q</a></li>
@@ -277,20 +440,22 @@
                                             <img src="image/book1.jpg" alt="" width="20px" height="20px" class="rounded-circle">
                                             <h6>How to approach applying for a job at a company</h6>
                                             <a href=""><i class="fa fa-comment"></i> 7 Answers</a>
-                                        </div><hr>
-                                        
+                                        </div>
+                                        <hr>
+
                                         <div id="ans-tab-bg">
                                             <img src="image/book1.jpg" alt="" width="20px" height="20px" class="rounded-circle">
                                             <h6>What is a programmer’s life like?</h6>
                                             <a href=""><i class="fa fa-comment"></i> 5 Answers</a>
-                                        </div> <hr>
-                                        
+                                        </div>
+                                        <hr>
+
                                         <div id="ans-tab-bg">
                                             <img src="image/book1.jpg" alt="" width="20px" height="20px" class="rounded-circle">
                                             <h6>Why are the British confused about us calling bread rolls</h6>
                                             <a href=""><i class="fa fa-comment"></i> 10 Answers</a>
                                         </div>
-                                         
+
                                     </div>
                                 </div>
                             </div>
@@ -301,59 +466,73 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div id="ans-tab-bg">
-                                            <img src="" alt=""> 
-                                            <a href="">Martin Hope</a><span> added an answer</span>  <a href=""><p>might be as confused as to why you keep…</p></a>
+                                            <img src="" alt="">
+                                            <a href="">Martin Hope</a><span> added an answer</span> <a href="">
+                                                <p>might be as confused as to why you keep…</p>
+                                            </a>
                                             <span>April 19, 2018 at 2:07 am</span>
                                             <hr>
-                                        </div> 
-                                        
+                                        </div>
+
                                         <div id="ans-tab-bg">
-                                            <img src="" alt=""> 
-                                            <a href="">Marko Smith</a><span> added an answer</span>  <a href=""><p>have never heard a British person EVER call a…</p></a>
+                                            <img src="" alt="">
+                                            <a href="">Marko Smith</a><span> added an answer</span> <a href="">
+                                                <p>have never heard a British person EVER call a…</p>
+                                            </a>
                                             <span>April 19, 2018 at 2:07 am</span>
                                             <hr>
-                                        </div> 
-                                        
+                                        </div>
+
                                         <div id="ans-tab-bg">
-                                            <img src="" alt=""> 
-                                            <a href="">Barry Smith </a><span> added an answer</span>  <a href=""><p>Calling a bread roll a “biscuit” really takes the biscuit …</p></a>
+                                            <img src="" alt="">
+                                            <a href="">Barry Smith </a><span> added an answer</span> <a href="">
+                                                <p>Calling a bread roll a “biscuit” really takes the biscuit …</p>
+                                            </a>
                                             <span>April 19, 2018 at 8:07 am</span>
-                                        </div> 
-                                        
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div> 
-                    
+                    </div>
+
                     <!-- Top Memebers-->
                     <div class="row">
                         <div class="col-md-12">
-                           <div id="memebers">
-                               <h3 class="text-center"><i class="fa fa-users"></i> Top Member</h3>
-                            <div id="member-1" class="member text-center">
-                               <img src="image/book1.jpg" width="40px" height="40px" class="rounded-circle">
-                                <a href=""><h6>Marko Smith</h6></a>
-                                <p>103 Questions</p>
-                                <span>Enlightened</span>
-                            </div><hr>
-                            <div id="member-2" class=" member text-center">
-                                <img src="image/book1.jpg" width="40px" height="40px" class="rounded-circle">
-                                <a href=""><h6>Marko Smith</h6></a>
-                                <p>38 Questions</p>
-                                <span>Enlightened</span>
-                            </div><hr>
-                            <div id="member-3" class=" member text-center">
-                                <img src="image/book1.jpg" width="40px" height="40px" class="rounded-circle">
-                                <a href=""><h6>Marko Smith</h6></a>
-                                <p>308 Questions</p>
-                                <span>Explainer</span>
+                            <div id="memebers">
+                                <h3 class="text-center"><i class="fa fa-users"></i> Top Member</h3>
+                                <div id="member-1" class="member text-center">
+                                    <img src="image/book1.jpg" width="40px" height="40px" class="rounded-circle">
+                                    <a href="">
+                                        <h6>Marko Smith</h6>
+                                    </a>
+                                    <p>103 Questions</p>
+                                    <span>Enlightened</span>
+                                </div>
+                                <hr>
+                                <div id="member-2" class=" member text-center">
+                                    <img src="image/book1.jpg" width="40px" height="40px" class="rounded-circle">
+                                    <a href="">
+                                        <h6>Marko Smith</h6>
+                                    </a>
+                                    <p>38 Questions</p>
+                                    <span>Enlightened</span>
+                                </div>
+                                <hr>
+                                <div id="member-3" class=" member text-center">
+                                    <img src="image/book1.jpg" width="40px" height="40px" class="rounded-circle">
+                                    <a href="">
+                                        <h6>Marko Smith</h6>
+                                    </a>
+                                    <p>308 Questions</p>
+                                    <span>Explainer</span>
+                                </div>
                             </div>
                         </div>
-                        </div>
                     </div>
-                                   
-                    <!-- Top tags-->               
+
+                    <!-- Top tags-->
                     <div class="row">
                         <div class="col-md-12">
                             <div id="tags" class="text-center">
@@ -370,72 +549,87 @@
                                 <a href="">salary</a>
                             </div>
                         </div>
-                    </div>                                         
-
-                                   
-               </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <footer>
         <div class="container-fluid">
-           <div id="footer-container">
-            <div class="container">
-               <div id="footer">
-                   <div class="content-box-md">
-                   <div class="row">
-                       <div class="col-md-6">
-                           <img src="image/book1.jpg" width="50px" height="50px">
-                           <p>chat is a social questions and Answers Engine which will help you establis your community and connect with other people.</p>
+            <div id="footer-container">
+                <div class="container">
+                    <div id="footer">
+                        <div class="content-box-md">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="image/book1.jpg" width="50px" height="50px">
+                                    <p>chat is a social questions and Answers Engine which will help you establis your community and connect with other people.</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <h4>About Us</h4>
+                                    <ul>
+                                        <a href="#">
+                                            <li>Meet The Team</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>Blog</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>About Us</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <div class="col-md-2">
+                                    <h4>Legal Stuff</h4>
+                                    <ul>
+                                        <a href="#">
+                                            <li>Terms of Use</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>Privacy Policy</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>Cookie Policy</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <div class="col-md-2">
+                                    <h4>Help</h4>
+                                    <ul>
+                                        <a href="#">
+                                            <li>Knowledge Base</li>
+                                        </a>
+                                        <a href="#">
+                                            <li>Support</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                                <div class="col-md-2">
+                                    <h4>Follow Us</h4>
+                                    <a href=""><i class="fa fa-facebook"></i></a>&nbsp;
+                                    <a href=""><i class="fa fa-twitter"></i></a>&nbsp;
+                                    <a href=""><i class="fa fa-instagram"></i></a>&nbsp;
+                                    <a href=""><i class="fa fa-feed"></i></a>
+                                </div>
+
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <p>© 2020 All Rights Reserved</p>
+                                    <p>With Love by raj</p>
+                                </div>
+                            </div>
                         </div>
-                       <div class="col-md-2">
-                           <h4>About Us</h4>
-                           <ul>
-                               <a href="#"><li>Meet The Team</li></a>
-                               <a href="#"><li>Blog</li></a>
-                               <a href="#"><li>About Us</li></a>
-                           </ul>
-                       </div>
-                       <div class="col-md-2">
-                           <h4>Legal Stuff</h4>
-                           <ul>
-                               <a href="#"><li>Terms of Use</li></a>
-                               <a href="#"><li>Privacy Policy</li></a>
-                               <a href="#"><li>Cookie Policy</li></a>
-                           </ul>
-                       </div>
-                       <div class="col-md-2">
-                           <h4>Help</h4>
-                           <ul>
-                               <a href="#"><li>Knowledge Base</li></a>
-                               <a href="#"><li>Support</li></a>
-                           </ul>
-                       </div>
-                       <div class="col-md-2">
-                           <h4>Follow</h4>
-                           <a href=""><i class="fa fa-facebook"></i></a>&nbsp;
-                           <a href=""><i class="fa fa-twitter"></i></a>&nbsp;
-                           <a href=""><i class="fa fa-instagram"></i></a>&nbsp;
-                           <a href=""><i class="fa fa-feed"></i></a>
-                       </div>
-                       
-                   </div>
-                   <hr>
-                   <div class="row">
-                       <div class="col-md-12 text-center">
-                           <p>© 2020 All Rights Reserved</p>
-                           <p>With Love by raj</p>
-                       </div>
-                   </div>
-                   </div>
-               </div>           
+                    </div>
+                </div>
             </div>
-            </div>
-    </div>
-        
+        </div>
+
     </footer>
     <script src="js/jquery/jquery.js"></script>
     <script src="js/responsive-tabs/jquery.responsiveTabs.min.js"></script>
     <script src="js/script.js"></script>
 </body>
+
 </html>

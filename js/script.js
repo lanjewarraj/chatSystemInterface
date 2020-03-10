@@ -5,3 +5,9 @@ $(function () {
         animation: 'slide',
     });
 });
+/*main content tab*/
+$(function () {
+    $("#main-content-container").responsiveTabs({
+        animation: 'slide',
+    });
+});
